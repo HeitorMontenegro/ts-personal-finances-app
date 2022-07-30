@@ -1,0 +1,42 @@
+.front__panel__container{
+    display: flex;
+    border: 1px solid var(--color-primary);
+    border-radius: 15px;  
+    padding: 15px;
+    margin: 10px;
+}
+
+.front__panel__element{
+margin: 0 auto;
+color: var(--color-primary);
+}
+
+.front__panel__element .btn{
+    height: 2.5rem;
+    width: 2.5rem;
+    }
+
+.front__panel__element__month{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-gap: 0.5rem;
+    text-align: center;
+}
+.front__panel__element__year{
+   grid-column-start: 2;
+}
+
+.element__secondary{
+    color: var(--color-secondary);
+}
+
+@media screen and (max-width: 600px){
+    .front__panel__container{
+        display: flex;
+        flex-direction: column;
+        margin: 0.3rem auto;
+        padding: 0.8rem;
+        gap: 20px;
+    }
+
+}

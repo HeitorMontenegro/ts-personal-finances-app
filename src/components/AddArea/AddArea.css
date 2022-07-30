@@ -1,0 +1,62 @@
+.add__area__element{
+    margin: 0 auto;
+    color: var(--color-primary)
+}
+.add__area__element input, select{
+    width: 7.5rem;
+    min-height: 1.2rem;
+    padding: 0.5rem;
+    outline: none;
+    border: 1px solid var(--color-primary);
+    border-radius: 3px;
+    color: var(--color-secondary)
+}
+
+.add__area__element .btn{
+    vertical-align: middle;
+    width: 6.5rem;
+    min-height: 2.5rem;
+    margin: 50% auto;
+}   
+.add__area__container{
+    display: flex;
+    border: 1px solid var(--color-primary);
+    border-radius: 15px;  
+    padding: 15px;
+    margin: 10px;
+}
+@media screen and (max-width: 600px){
+    .add__area__container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 0.3rem;
+        margin: 0.3rem auto;
+    }
+
+    .add__area__element{
+       width: fit-content;
+    }
+
+    .add__area__element input, select{
+        max-width: 30%;
+        min-width: 5rem;
+    }
+    .add__area__element select{
+        min-width: 6rem;
+}
+   .add__area__element__btn{
+       grid-column: span 2;
+   }
+
+}
+@media screen and (max-width: 1024px){
+    .add__area__element input, select{
+        max-width: 4rem;
+        width: fit-content;
+    }
+    .add__area__element .btn{
+        width: max-content;
+    }
+}
+
+
