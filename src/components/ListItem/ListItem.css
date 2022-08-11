@@ -3,7 +3,7 @@
     border: 1px solid var(--color-primary);
     border-radius: 15px;  
     padding: 15px;
-    margin: 10px;
+    margin: 20px 10px;
 }
 
 .list__item__element{
@@ -21,7 +21,6 @@ word-wrap: break-word;
 @media screen and (max-width: 1024px){
     .list__item__container{
       display: flex;
-      margin: 0.3rem;
     }
     .list__item__element{
         width: 150px;
@@ -31,7 +30,6 @@ word-wrap: break-word;
 }
 @media screen and (max-width: 600px){
     .list__item__container{
-        margin: 0;
         display: grid;
         grid-template-columns: 50% 50%;
     }
